@@ -6,4 +6,6 @@
 
 .homepage img{
     width: 100%;
+    filter: blur(3px);
+    height: 44rem;
 }
