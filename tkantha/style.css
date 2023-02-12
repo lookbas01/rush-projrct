@@ -1,8 +1,12 @@
 body{
     background: aliceblue;
 }
+
+
+
 .home{
     min-height: 70vh;
+    padding: 7%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,22 +35,34 @@ ul{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-li{
+ul li{
     transition: 0.3s;
     padding: 20px 20px;
     border-radius: 100px;
     border: 1px solid black;
     margin-bottom: 10px;
 }
+.back{
+    font-size: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    margin-left: 20%;
+}
 
-li:hover{
+.back h3{
+    margin-top: -13px;
+    margin-left: -6px;
+}
+
+ul li:hover{
     transition: 0.3s;
     background-color: rgb(6, 191, 247);
     color: white;
     border: none;
 }
 
-li:active{
+ul li:active{
     background-color: rgb(6, 191, 247);
 }
 
@@ -58,11 +74,69 @@ a{
 .content{
     margin-left: 10%;
 }
+
 h1{
+    margin-top: 10px;
     margin-left: -10%;
     text-align: center;
 }
 
-img{
+.profile{
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: 
+    "text text"
+    "img data";
+    grid-template-columns: 43% 57%;
+    width: 80%;
+    height: 600px;
+}
+.profile p{
+    grid-area: text;
+    width: auto;
+    height: 10px;
+}
+
+.profile img{
+    grid-area: img;
+    border-radius: 10%;
+    width: auto;
+    height: 400px;
+    margin-left: 10%;
+}
+
+.profile .info{
+    grid-area: data;
+}
+
+.info h1{
+    text-align: left;
+    margin-left: 0.5px;
+}
+
+.info table{
+    font-size: large;
+}
+
+.info td{
+    padding: 15px;
+    text-align: left;
+}
+
+.info p{
+    font-size: 50px;
+    
+    padding-left: 10%;
+}
+
+.skill{
+    display: grid;
     width: 100%;
+    height: 600px;
+}
+
+.contact{
+    display: grid;
+    width: 100%;
+    height: 600px;
 }
