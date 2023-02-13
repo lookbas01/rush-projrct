@@ -1,5 +1,7 @@
 body {
     background: aliceblue;
+    margin: 0;
+    padding: 0;
 }
 
 .home {
@@ -10,6 +12,7 @@ body {
     justify-content: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: -10%;
+    scroll-snap-align: start;
 }
 
 .home .text {
@@ -23,7 +26,7 @@ body {
 }
 
 .home .text.second-text {
-    color: rgb(6, 191, 247);
+    color: rgb(238, 87, 76);
 }
 
 ul {
@@ -56,15 +59,13 @@ ul li {
     margin-left: -6px;
 }
 
-ul li:hover {
+ul .active,
+.nav-item:hover,
+.back:hover {
     transition: 0.3s;
     background-color: rgb(6, 191, 247);
     color: white;
     border: none;
-}
-
-ul li:active {
-    background-color: rgb(6, 191, 247);
 }
 
 a {
@@ -74,9 +75,18 @@ a {
 
 .content {
     margin-left: 10%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
-h1 {
+.content section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+h1,
+h2 {
     margin-top: 10px;
     margin-left: -10%;
     text-align: center;
@@ -93,13 +103,15 @@ h1 {
 
 .profile p {
     grid-area: text;
+    font-size: 17px;
     width: auto;
     height: 10px;
+    font-family: 'Poppins';
 }
 
 .profile img {
     grid-area: img;
-    border-radius: 10%;
+    border-radius: 0%;
     width: auto;
     height: 400px;
     margin-left: 10%;
@@ -107,6 +119,7 @@ h1 {
 
 .profile .info {
     grid-area: data;
+    font-family: 'Poppins';
 }
 
 .info h1 {
@@ -115,7 +128,7 @@ h1 {
 }
 
 .info table {
-    font-size: large;
+    font-size: medium;
 }
 
 .info td {
@@ -124,46 +137,110 @@ h1 {
 }
 
 .info p {
-    font-size: 50px;
+    font-size: 40px;
     padding-left: 10%;
 }
 
-.skills .progress {
-    height: 60px;
-    display: block;
-    background: none;
-    border-radius: 0;
+.skill {
+    display: grid;
+    grid-template-areas: "program other";
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    height: 600px;
 }
 
-.skills .progress .skill {
-    padding: 0;
-    margin: 0 0 6px 0;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #050d18;
+.skill .power {
+    grid-area: program;
+    margin-left: 15%;
+    width: 100%;
+    border-right: 1px solid black;
 }
 
-.skills .progress .skill .val {
-    float: right;
-    font-style: normal;
+.power h2 {
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: large;
 }
 
-.skills .progress-bar-wrap {
-    background: #dce8f8;
-    height: 10px;
+.power .box {
+    background-color: gray;
 }
 
-.skills .progress-bar {
-    width: 1px;
-    height: 10px;
-    transition: 0.9s;
-    background-color: #149ddd;
+.box .html {
+    width: 70%;
+    padding-top: 25px;
+    height: 40px;
+    background-color: #04AA6D;
+}
+
+.box .css {
+    width: 50%;
+    height: 40px;
+    padding-top: 25px;
+    background-color: #199ee0;
+}
+
+.box .js {
+    width: 20%;
+    height: 40px;
+    padding-top: 25px;
+    background-color: #f1b500;
+}
+
+.box .c {
+    width: 50%;
+    height: 40px;
+    padding-top: 25px;
+    background-color: #6fc2ee;
+}
+
+.box .python {
+    width: 70%;
+    height: 40px;
+    padding-top: 25px;
+    background-color: #e8c356;
+}
+
+.skill .special {
+    grid-area: other;
+    text-align: center;
+}
+
+.special img {
+    width: 200px;
 }
 
 .contact {
-    display: grid;
     width: 100%;
     height: 600px;
+}
+
+.contact img {
+    width: 100px;
+    height: 100px;
+}
+
+.contact table {
+    margin-left: 25%;
+    padding: 40px;
+    width: 600px;
+    font-family: 'Poppins';
+}
+
+.contact table.social {
+    margin-left: 10%;
+    align-self: center;
+    padding: 50px;
+    width: 1000px;
+}
+
+.contact th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contact .social img:hover {
+    filter: brightness(80%);
+    width: 102px;
+    height: 102px;
 }
