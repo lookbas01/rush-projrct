@@ -103,11 +103,9 @@
 }
 
 .card .box1,
-.box2,
-.box3,
-.box4 {
-    width: 90%;
-    height: 220px;
+.box2 {
+    width: 100%;
+    height: 500px;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -116,11 +114,11 @@
 }
 
 .box1 {
-    background-image: url("https://campus.campus-star.com/app/uploads/2020/01/KMITL-01.jpg");
+    background-image: url("https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.6435-9/155824877_1821293804701024_5691439900894908254_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGRV3yedMLfVkKxYni-TvlF-lb5nqiBwv76VvmeqIHC_k09I7PY-3JmovbZ4KSSy7Xn7HhoZhcUy-TtznAKsTIz&_nc_ohc=1CmE6j656OcAX-41yl6&_nc_ht=scontent.fbkk2-6.fna&oh=00_AfD51BnkySKbZ7t9ZrQ-IJw5PlbjeorEegFqoDGeen571w&oe=6411338E");
 }
 
 .box2 {
-    background-image: url("");
+    background-image: url("https://scontent.fbkk4-2.fna.fbcdn.net/v/t39.30808-6/302165514_1289981818245787_5688081811974855594_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeECUKgUHwqOvTP7vRuMBIq5QNhskFca3l1A2GyQVxreXTNJEn7blZmeDhV2SKIUnaGujsSjrmqqDhdzLsUWHs3X&_nc_ohc=ZEJP9PgKHW8AX9gyZHl&tn=YZzQzqftt_enfXin&_nc_zt=23&_nc_ht=scontent.fbkk4-2.fna&oh=00_AfDxQ42ahqB9CxeXyBSjB3V4bOwDv4R8N3DO6EdMEVz4Cw&oe=63EE4BCA");
 }
 
 .phuket h2 {

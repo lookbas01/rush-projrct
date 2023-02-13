@@ -1,0 +1,169 @@
+body {
+    background: aliceblue;
+}
+
+.home {
+    min-height: 70vh;
+    padding: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: -10%;
+}
+
+.home .text {
+    position: relative;
+    padding-left: 10px;
+    font-size: 70px;
+}
+
+.home .text.first-text {
+    color: black;
+}
+
+.home .text.second-text {
+    color: rgb(6, 191, 247);
+}
+
+ul {
+    list-style-type: none;
+    position: fixed;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: -20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ul li {
+    transition: 0.3s;
+    padding: 20px 20px;
+    border-radius: 100px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.back {
+    font-size: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    margin-left: 20%;
+}
+
+.back h3 {
+    margin-top: -13px;
+    margin-left: -6px;
+}
+
+ul li:hover {
+    transition: 0.3s;
+    background-color: rgb(6, 191, 247);
+    color: white;
+    border: none;
+}
+
+ul li:active {
+    background-color: rgb(6, 191, 247);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    margin-left: 10%;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-left: -10%;
+    text-align: center;
+}
+
+.profile {
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: "text text" "img data";
+    grid-template-columns: 43% 57%;
+    width: 80%;
+    height: 600px;
+}
+
+.profile p {
+    grid-area: text;
+    width: auto;
+    height: 10px;
+}
+
+.profile img {
+    grid-area: img;
+    border-radius: 10%;
+    width: auto;
+    height: 400px;
+    margin-left: 10%;
+}
+
+.profile .info {
+    grid-area: data;
+}
+
+.info h1 {
+    text-align: left;
+    margin-left: 0.5px;
+}
+
+.info table {
+    font-size: large;
+}
+
+.info td {
+    padding: 15px;
+    text-align: left;
+}
+
+.info p {
+    font-size: 50px;
+    padding-left: 10%;
+}
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background: #dce8f8;
+    height: 10px;
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #149ddd;
+}
+
+.contact {
+    display: grid;
+    width: 100%;
+    height: 600px;
+}
